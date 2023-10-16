@@ -18,7 +18,7 @@ body {
   }
 
   a:hover {
-    color: grey /* Or any other color of your choice */
+    color: grey 
 }
   
 /* Navbar */
@@ -88,7 +88,7 @@ body {
 /* About me */
 
 .about-me {
-    margin-top: 20px;
+    margin-top: 40px;
     display: flex;
     align-items: start;
 
@@ -153,7 +153,7 @@ body {
 
 .card p {
     color: rgb(2, 2, 74);
-    
+    margin-left: -16px;
     background-color: aqua;
 }
 
@@ -166,16 +166,16 @@ body {
 }
 
 .card:hover {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
-    /* transition: box-shadow 0.3s ease-in-out;  */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); 
+    
 }
 
 .card .card-img-overlay p {
     opacity: 0;
-    transition: opacity 0.3s ease-in-out; /* Optional: for a smooth transition */
+    transition: opacity 0.3s ease-in-out; 
 }
 
-/* Reveal <p> element on hover */
+
 .card:hover .card-img-overlay p {
     opacity: 1;
 }
@@ -185,8 +185,11 @@ body {
 .skills {
     display: flex;
     align-items: start;
-    margin-top: 20px;
+    margin-top: 40px;
+    line-height: 5; 
+   
 }
+
 
 .skills h2 {
     width: 300px;
@@ -215,7 +218,7 @@ body {
 .contact {
     display: flex;
     align-items: start;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 .contact h2 {
@@ -237,12 +240,12 @@ body {
 
 
 @media (max-width: 768px) {
-    .about-me {
-        flex-direction: column; /* Stack elements vertically on smaller screens */
+    .about-me, .work-section, .skills, .contact {
+        flex-direction: column; 
     }
-    .about-me h2, .about-me p, .work-section h2, .grid{
-        margin-right: 0; /* Remove margin on smaller screens */
-        width: 100%; /* Make elements full width on smaller screens */
-        flex: initial; /* Reset flex properties */
+    .about-me h2, .about-me p, .work-section h2, .grid, .skills h2, .skill-items, .contact h2, .contact-items{
+        margin-right: 0; 
+        width: 100%; 
+        flex: initial; 
     }
 }
