@@ -44,5 +44,92 @@
   border: 4px solid aqua;
 }
 
+/* About me */
+
+.about-me {
+    display: flex;
+    align-items: start;
+   
+}
+.about-me h2 {
+    width: 400px;
+}
+
+.about-me p {
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 100px;
+}
+
+
 /* work section */
 
+.work-section {
+    display: flex;
+    align-items: start;
+}
+
+.work-section h2 {
+    width: 400px;
+}
+
+.grid {
+    flex-grow: 1;
+    margin-left: 50px;
+    margin-right: 100px;
+
+}
+
+
+.top-card .card-img {
+    width: 100%; /* Full width */
+    height: 300px; /* You can adjust this value */
+    object-fit: cover; 
+   
+}
+
+
+.card-img {
+    width: 100%; /* Full width */
+    height: 150px; /* You can adjust this value. Ensure this is less than the top image for visual consistency */
+    object-fit: cover; 
+}
+
+/* /* skills section  */
+
+.skills {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.skills h2 {
+    width: 400px;
+}
+
+.skill-items {
+    flex-grow: 1;
+    margin-left: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    padding: 5px;
+}
+
+
+.skills i {
+    font-size: 40px;
+    padding: 5px;
+}
+
+
+@media (max-width: 768px) {
+    .about-me {
+        flex-direction: column; /* Stack elements vertically on smaller screens */
+    }
+    .about-me h2, .about-me p, .work-section h2, .grid{
+        margin-right: 0; /* Remove margin on smaller screens */
+        width: 100%; /* Make elements full width on smaller screens */
+        flex: initial; /* Reset flex properties */
+    }
+}
