@@ -1,17 +1,53 @@
 
+body {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    line-height: 1.5;
+  }
 
+  h1 {
+    font-size: 50px;
+    color: rgb(2, 2, 74);
+  }
+
+  h2, p {
+    color: rgb(2, 2, 74);
+  }
+
+  a {
+    color: rgb(2, 2, 74);
+  }
+
+  a:hover {
+    color: grey /* Or any other color of your choice */
+}
+  
 /* Navbar */
+
+.navbar1 {
+    background-color: rgb(69, 69, 69);
+    margin-top: -10px;
+    margin-bottom: -10px;
+}
 
 .navbar-brand {
     font-size: 50px;
     background-color: aqua;
+    padding-left: 100px;
+    padding-right: 30px;
+    margin-left: -20px;
+    margin-bottom: 10px;
+    
 }
 
 #navbarNav {
     display: flex;
-    justify-content: end
+    justify-content: end;
+    color: aqua;
 }
 
+.nav-link {
+   color: aqua;
+}
 /* hero jumbotron */
 
 .hero {
@@ -34,65 +70,114 @@
   padding-right: 10px;
 }
 
+
+
 .jumbo-photo img {
-    max-width: 70%;   
+  max-width: 70%;   
   height: auto;       
   border-radius: 40px; 
   margin-left: 80px;
   margin-top: 10px;
-  padding-bottom: 5px;
   border: 4px solid aqua;
+  border: -5px;
 }
 
+.jumbo-photo {
+    padding-bottom: 5px;
+}
 /* About me */
 
 .about-me {
+    margin-top: 20px;
     display: flex;
     align-items: start;
+
    
 }
 .about-me h2 {
-    width: 400px;
+    width: 300px;
+    margin-left: 100px;
+   
 }
 
 .about-me p {
     flex-grow: 1;
     margin-left: 50px;
     margin-right: 100px;
+    border-left: 2px solid rgb(2, 2, 74);
+    padding-left: 40px;
 }
 
 
 /* work section */
 
 .work-section {
+    margin-top: 20px;
     display: flex;
     align-items: start;
 }
 
 .work-section h2 {
-    width: 400px;
+    width: 300px;
+    margin-left: 100px;
 }
 
 .grid {
     flex-grow: 1;
     margin-left: 50px;
     margin-right: 100px;
+    border-left: 2px solid rgb(2, 2, 74);
+    padding-left: 40px;
 
 }
 
 
 .top-card .card-img {
-    width: 100%; /* Full width */
-    height: 300px; /* You can adjust this value */
+    width: 100%; 
+    height: 300px; 
     object-fit: cover; 
-   
 }
 
 
 .card-img {
-    width: 100%; /* Full width */
-    height: 150px; /* You can adjust this value. Ensure this is less than the top image for visual consistency */
+    width: 100%; 
+    height: 150px; 
     object-fit: cover; 
+}
+
+.card {
+    margin-top: 10px;
+    border: 4px solid aqua;
+ 
+}
+
+.card p {
+    color: rgb(2, 2, 74);
+    
+    background-color: aqua;
+}
+
+.card-title {
+    background-color: aqua;
+    padding-left: 20px;
+    color: rgb(2, 2, 74);
+    margin-left: -16px;
+    
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* Adjust values as needed */
+    /* transition: box-shadow 0.3s ease-in-out;  */
+}
+
+.card .card-img-overlay p {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out; /* Optional: for a smooth transition */
+}
+
+/* Reveal <p> element on hover */
+.card:hover .card-img-overlay p {
+    opacity: 1;
 }
 
 /* /* skills section  */
@@ -104,7 +189,8 @@
 }
 
 .skills h2 {
-    width: 400px;
+    width: 300px;
+    margin-left: 100px;
 }
 
 .skill-items {
@@ -113,13 +199,40 @@
     display:flex;
     justify-content: space-evenly;
     margin-right: 100px;
-    padding: 5px;
+    border-left: 2px solid rgb(2, 2, 74);
+    padding-left: 40px;
 }
 
 
 .skills i {
     font-size: 40px;
     padding: 5px;
+    color: rgb(2, 2, 74);
+}
+
+/* Contact me section */
+
+.contact {
+    display: flex;
+    align-items: start;
+    margin-top: 20px;
+}
+
+.contact h2 {
+    width: 300px;
+    margin-left: 100px;
+}
+
+.contact-items {
+    flex-grow: 1;
+    margin-left: 50px;
+    display:flex;
+    justify-content: space-evenly;
+    margin-right: 100px;
+    border-left: 2px solid rgb(2, 2, 74);
+    padding-left: 40px;
+    background-color: aqua;
+    padding: 20px;
 }
 
 
