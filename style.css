@@ -54,7 +54,7 @@ body {
     display:flex;
     align-items: end;
     justify-content: space-between;
-    background: linear-gradient(rgba(0, 213, 255, 0.453), rgba(0, 170, 255, 0.5)), url("./images/02-hero-bg.jpg");
+    background: linear-gradient(rgba(0, 213, 255, 0.453), rgba(0, 170, 255, 0.5)), url("./Images/02-hero-bg.jpg");
   background-size: cover; 
   background-repeat: no-repeat;   
   background-position: center center;   
