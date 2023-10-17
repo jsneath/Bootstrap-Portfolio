@@ -21,4 +21,4 @@ For a live URL of the portfolio, click here: https://jsneath.github.io/Bootstrap
 
 Github URL: https://github.com/jsneath/Bootstrap-Portfolio
 
-![Web portfolio with bootstrap] (Screenshot.png)
+![Web portfolio with bootstrap](Screenshot.png)
